@@ -1,0 +1,4 @@
+
+db.createCollection( 'video', {validator: {$jsonSchema: {bsonType: 'object',title:'video',required: [         'titulo',          'descripción',          'Grandaria',          'nombre de archivo',          'duración',          'thumbnail',          'número de reproducciónes',          'likes',          'dislikes',          'estado de accéso',          'usuario',          'playlist'],properties: {titulo: {bsonType: 'string'},descripción: {bsonType: 'string'},Grandaria: {bsonType: 'double'},nombre de archivo: {bsonType: 'string'},duración: {bsonType: 'decimal'},thumbnail: {bsonType: 'binData'},número de reproducciónes: {bsonType: 'int'},likes: {bsonType: 'int'},dislikes: {bsonType: 'int'},estado de accéso: {enum: },usuario: {bsonType: 'objectId'},playlist: {bsonType: 'objectId'}}         }      },
+capped:
+});  
